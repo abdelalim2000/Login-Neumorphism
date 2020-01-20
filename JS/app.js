@@ -49,6 +49,21 @@ log.addEventListener('click', () => {
     }
 })
 
+form.addEventListener(`keypress`, (event) => {
+    const usernamePrompt = user.value
+    const passwordPrompt = pass.value
+
+    if (check(usernamePrompt, passwordPrompt) && event.which === 13) {
+        console.log(newsFeed)
+        user.value = ""
+        pass.value = ""
+    } else {
+        alert(`Sorry wrong username or password`)
+        user.value = ""
+        pass.value = ""
+    }
+})
+
 const check = (username, password) => {
     for (let i = 0; i < database.length; i++) {
         if (database[i].username === username &&
