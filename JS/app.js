@@ -1,7 +1,7 @@
 const user = document.querySelector(`#username`)
 const pass = document.querySelector(`#password`)
 const log = document.querySelector(`#login`)
-const form = document.querySelector(`.form`)
+/* const form = document.querySelector(`.form`) */
 
 const database = [{
         username: `mohamed`,
@@ -50,7 +50,7 @@ log.addEventListener('click', () => {
     }
 })
 
-form.addEventListener(`keypress`, (event) => {
+/* form.addEventListener(`keypress`, (event) => {
     const usernamePrompt = user.value
     const passwordPrompt = pass.value
 
@@ -63,7 +63,7 @@ form.addEventListener(`keypress`, (event) => {
         user.value = ""
         pass.value = ""
     }
-})
+}) */
 
 const check = (username, password) => {
     for (let i = 0; i < database.length; i++) {
