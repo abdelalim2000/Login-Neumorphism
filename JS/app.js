@@ -3,7 +3,6 @@ const pass = document.querySelector(`#password`)
 const log = document.querySelector(`#login`)
 const form = document.querySelector(`.form`)
 
-
 const database = [{
         username: `mohamed`,
         password: `1234`
