@@ -1,6 +1,7 @@
 const user = document.querySelector(`#username`)
 const pass = document.querySelector(`#password`)
 const log = document.querySelector(`#login`)
+const form = document.querySelector(`.form`)
 
 const database = [{
         username: `mohamed`,
